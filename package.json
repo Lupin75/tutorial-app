@@ -6,6 +6,8 @@
   "scripts": {
     "test": "node test.js",
     "starwars": "node utils/starwars.js",
+    "clean": "npm run clean:build && npm run create:build && rimraf npm-debug.log",
+    "copy": "cp -R -L  ./node_modules ./public ./*.json ./helpers ./api ./test ./scripts ./*.js  $npm_package_config_build",
     "build": "npm run clean",
     "package": " npm run build && npm run copy"
 
