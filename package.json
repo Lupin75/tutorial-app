@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "node test.js",
-    "starwars": "node utils/starwars.js"
+    "starwars": "node utils/starwars.js",
+    "package": " npm run build && npm run copy"
+
   },
   "keywords": [],
   "author": "",
